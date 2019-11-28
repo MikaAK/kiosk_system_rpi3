@@ -25,8 +25,7 @@ defmodule KioskSystemRpi3.MixProject do
   def application do
     []
   end
-
-  defp bootstrap(args) do
+defp bootstrap(args) do
     set_target()
     Application.start(:nerves_bootstrap)
     Mix.Task.run("loadconfig", args)
@@ -36,7 +35,7 @@ defmodule KioskSystemRpi3.MixProject do
     [
       type: :system,
       artifact_sites: [
-        {:github_releases, "letoteteam/#{@app}"}
+        {:github_releases, "mikaak/#{@app}"}
       ],
       build_runner_opts: build_runner_opts(),
       platform: Nerves.System.BR,
@@ -67,7 +66,7 @@ defmodule KioskSystemRpi3.MixProject do
     [
       files: package_files(),
       licenses: ["Apache 2.0"],
-      links: %{"GitHub" => "https://github.com/letoteteam/#{@app}"}
+      links: %{"GitHub" => "https://github.com/mikaak/#{@app}"}
     ]
   end
 
