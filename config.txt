@@ -21,7 +21,7 @@ gpu_mem=192
 
 # Enable I2C and SPI
 dtparam=i2c_arm=on,spi=on
-dtoverlay=rpi-ft5406,touchscreen-size-y=480
+dtoverlay=rpi-ft5406
 dtoverlay=rpi-backlight
 
 # Set 800x480 for Adafruit Display
