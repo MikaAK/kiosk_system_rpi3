@@ -27,7 +27,6 @@ dtoverlay=rpi-backlight
 # Set 800x480 for Adafruit Display
 # https://learn.adafruit.com/adafruit-tfp401-hdmi-slash-dvi-decoder-to-40-pin-ttl-display/raspberry-pi-config
 hdmi_group=2
-hdmi_mode=1
 hdmi_mode=87
 hdmi_cvt=800 480 60 6 0 0 0
 # Disable overscan to get rid of black border
